@@ -1,0 +1,10 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\objects\msp432xx_constants.o"
+".\objects\msp432xx_tim_constants.o"
+".\objects\startup_msp432xx_md.o"
+".\objects\core_cm3_constant.o"
+".\objects\adding 2 64 bits.o"
+--strict --scatter ".\Objects\keil.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\keil.map" -o .\Objects\keil.axf

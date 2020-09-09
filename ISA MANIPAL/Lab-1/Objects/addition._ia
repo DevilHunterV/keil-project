@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork 
+-I.\RTE\_Target_1
+-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+-IC:\Users\user\AppData\Local\Arm\Packs\TexasInstruments\MSP432P4xx_DFP\3.2.6\Device\Include
+--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "__MSP432P401R__ SETA 1"
+--list .\listings\addition.lst --xref -o .\objects\addition.o --depend .\objects\addition.d "Addition.s"
